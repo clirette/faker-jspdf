@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <form action="/fake" method="GET">
+    <label for="sentences">How many fake sentences</label>
+    <input type="text" name="sentences" id="sentences">
+    <input type="submit" value="Submit">
+  </form>
+  <form id="pdf-form">
+    <label for="names">How many names in pdf</label>
+    <input type="text" name="names" id="names">
+    <label for="filename">Filename</label>
+    <input type="text" name="filename" id="filename">
+    <input type="submit" value="Submit" id="pdf-submit">
+  </form>
+</body>
+<script src="https://unpkg.com/jspdf@1.5.3/dist/jspdf.min.js"></script>
+<script src="https://unpkg.com/jspdf-autotable@3.0.10/dist/jspdf.plugin.autotable.js"></script>
+<script src="js/pdf.js"></script>
+</html>
